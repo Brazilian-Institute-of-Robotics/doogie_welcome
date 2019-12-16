@@ -1,0 +1,6 @@
+<launch>
+  <node name="cpp_talker_node" pkg="doogie_welcome" type="cpp_talker_node" output="screen"/>
+  <node name="cpp_listener_node" pkg="doogie_welcome" type="cpp_listener_node" output="screen"/>
+  <node name="python_talker_node" pkg="doogie_welcome" type="python_talker.py" output="screen"/>
+  <node name="python_listener_node" pkg="doogie_welcome" type="python_listener.py" output="screen"/>
+</launch>
