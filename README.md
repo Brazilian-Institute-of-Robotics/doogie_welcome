@@ -50,23 +50,14 @@ $ roslaunch doogie_welcome doogie_welcome.launch
 * **[doogie_welcome.launch](launch/doogie_welcome.launch):** Launch the node of the ROS Driver
 
 ## Nodes
-TODO
+There are four simple nodes: two talkers and tow listeners. The nodes pair (talker/listener) were developed both in python and C++.
+They only publish and subscriber user interactive string messages in the topics listed below.
 
-#### Published Topics
-
-* **`/cpp_chatter`** ([std_msgs/String])
-	TODO.
-
-* **`/python_chatter`** ([std_msgs/String])
-	TODO.
-
-#### Subscribed Topics
+#### Published/Subscribed Topics
 
 * **`/cpp_chatter`** ([std_msgs/String])
-	TODO.
 
 * **`/python_chatter`** ([std_msgs/String])
-	TODO.
   
 ## Bugs & Feature Requests
 
