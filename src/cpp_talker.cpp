@@ -25,12 +25,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
+#include <sstream>
 #include "ros/ros.h"
 #include "std_msgs/String.h"
-#include <sstream>
 
-int main(int argc, char **argv){
-  ros::init(argc, argv, "talker");
+int main(int argc, char **argv) {
+  ros::init(argc, argv, "cpp_talker");
   ros::NodeHandle nh;
   ros::Publisher chatter_pub = nh.advertise<std_msgs::String>("cpp_chatter", 1);
   std_msgs::String msg;
@@ -39,7 +39,7 @@ int main(int argc, char **argv){
   int count = 0;
 
   ROS_INFO("C++ Talker node has started!");
-  while (ros::ok()){
+  while (ros::ok()) {
     std::stringstream ss;
     ss << "Welcome user! Enjoy the Doogie Mouse robot!" << count;
     msg.data = ss.str();
